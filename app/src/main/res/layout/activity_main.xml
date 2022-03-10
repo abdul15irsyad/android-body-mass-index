@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtBeratBadan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Isikan Berat Badan (Kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/txtTinggiBadan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Isikan Tinggi Badan (Meter)"
+            android:inputType="number|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCekBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cek BMI"/>
+
+        <TextView
+            android:id="@+id/txtStatusBadan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Badan"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
